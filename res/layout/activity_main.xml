@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    
+    
+    
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="A.S. Development" />
+
+    <ImageButton
+        android:id="@+id/btnFechar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView1"
+        android:onClick="onClickFechar"
+        android:src="@android:drawable/btn_dialog" />
+
+    <Button
+        android:id="@+id/btnObterAtividadeUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/btnFechar"
+        android:layout_marginLeft="14dp"
+        android:onClick="onClickUsuario"
+        android:text="Atividades Inscritas" />
+
+    <Button
+        android:id="@+id/btnObterAtividades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnObterAtividadeUsuario"
+        android:layout_alignRight="@+id/btnFechar"
+        android:layout_below="@+id/btnObterAtividadeUsuario"
+        android:onClick="onClickTodaProgramacao"
+        android:text="Programação" />
+
+</RelativeLayout>
